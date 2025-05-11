@@ -52,7 +52,7 @@ const Products = ({cart,setcart,Addtocart}) => {
     const [category, setcategory] = useState("");
     const [all, setall] = useState(fordata)
 
-    const Findbutton = () => {
+    const Findbutton = (e) => {
         e.preventDefault();
         const Filter = fordata.filter(pro => 
         (!name || pro.name.toLowerCase() === name.toLowerCase()) &&
